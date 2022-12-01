@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Vanilla Javascript Lightbox</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="container">
+        <h1 class="title">Vanilla JS Lightbox</h1>
+        <div class="row image-wrapper">
+            <div class="column">
+                <img width="300px" height="200px" class="lazyloaded lightbox-enabled" 
+                src="img/image_1.jpg" data-imagesrc="img/cat-g94c921520_1280.jpg" alt="Picture 1">
+                <h3 class="subtitle">Picture Title 1</h3>
+            </div>
+            <div class="column">
+                <img width="300px" height="200px" class="lazyloaded lightbox-enabled" 
+                src="img/image_2.jpg" data-imagesrc="img/cat-g94c921520_1280.jpg" alt="Picture 2">
+                <h3 class="subtitle">Picture Title 2</h3>
+            </div>
+            <div class="column">
+                <img width="300px" height="200px" class="lazyloaded lightbox-enabled" 
+                src="img/image_3.jpg"  data-imagesrc="img/cat-g94c921520_1280.jpg" alt="Picture 3">
+                <h3 class="subtitle">Picture Title 3</h3>
+            </div>
+            <div class="column">
+                <img width="300px" height="200px" class="lazyloaded lightbox-enabled" 
+                src="img/image_4.jpg" data-imagesrc="img/cat-g94c921520_1280.jpg" alt="Picture 4">
+                <h3 class="subtitle">Picture Title 4</h3>
+            </div>
+            <div class="column">
+                <img width="300px" height="200px" class="lazyloaded lightbox-enabled" 
+                src="img/image_5.jpg" data-imagesrc="img/cat-g94c921520_1280.jpg" alt="Picture 5">
+                <h3 class="subtitle">Picture Title 5</h3>
+            </div>
+            <div class="column">
+                <img width="300px" height="200px" class="lazyloaded lightbox-enabled" 
+                src="img/image_6.jpg" data-imagesrc="img/cat-g94c921520_1280.jpg" alt="Picture 6">
+                <h3 class="subtitle">Picture Title 6</h3>
+            </div>
+        </div>
+        <div class="lightbox-container">
+            <div class="lightbox-image-wrapper">
+              <button class="lightbox-btn left" id="left">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+              </button>
+              <img src="" class="lightbox-image">
+              <h3 class="lightbox-title"></h3>
+              <button class="lightbox-btn right" id="right">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+              </button>
+            </div>
+          </div>
+    </section>
+  </body>
+</html>
