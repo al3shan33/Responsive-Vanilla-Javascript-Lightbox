@@ -1,58 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
 }
 
 .column {
-    width: 33.33%;
-    padding: 15px;
+  width: 33.33%;
+  padding: 15px;
 }
 
 .image-wrapper {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px 0;
+  padding: 15px;
 }
 
 .title {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 1;
-    text-transform: uppercase;
-    color: rgb(50, 50, 50);
-    letter-spacing: 2px;
-    margin: 0px 0px 50px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgb(50, 50, 50);
+  letter-spacing: 2px;
+  margin: 50px 0px 50px;
 }
 
 .subtitle {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: rgb(51, 51, 51);
-    letter-spacing: 1px;
-    margin: 12px 0 0 0;
-    text-transform: uppercase;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(51, 51, 51);
+  letter-spacing: 1px;
+  margin: 12px 0 0 0;
+  text-transform: uppercase;
 }
 
 .lightbox-enabled {
+  width: 100%;
   object-fit: cover;
   transition: all 250ms ease-in-out;
 }
@@ -92,13 +93,14 @@ body.active {
 .lightbox-image-wrapper {
   display: grid;
   place-items: center;
-  width: 1080px;
-  height: 620px;
+  width: 80vw;
+  height: 650px;
   position: relative;
-  box-shadow: 0 19px 38px rgba(100,100,100,0.30), 0 15px 12px rgba(100,100,100,0.22);
+  box-shadow: 0 19px 38px rgba(100, 100, 100, 0.3),
+    0 15px 12px rgba(100, 100, 100, 0.22);
 }
 
-.lightbox-image-wrapper .lightbox-btn {
+.lightbox-btn {
   background-color: transparent;
   border: none;
   padding: 10px;
@@ -111,16 +113,16 @@ body.active {
   position: absolute;
 }
 
-.lightbox-image-wrapper .lightbox-btn.inactive {
+.lightbox-btn.inactive {
   opacity: 0;
   pointer-events: none;
 }
 
-.lightbox-image-wrapper .lightbox-btn:focus {
+.lightbox-btn:focus {
   outline: none;
 }
 
-.lightbox-image-wrapper .left {
+.left {
   left: -50px;
 }
 
@@ -128,23 +130,22 @@ body.active {
   fill: #fff;
 }
 
-.lightbox-image-wrapper .right {
+.right {
   right: -50px;
 }
 
-.lightbox-image-wrapper .right:hover {
+.right:hover {
   fill: #fff;
 }
 
-.lightbox-image-wrapper .lightbox-image {
+.lightbox-image {
   width: 100%;
-  width: 1080px;
-  height: 620px;
+  height: 650px;
   object-fit: cover;
   cursor: zoom-out;
 }
 
-.lightbox-container .lightbox-title {
+.lightbox-title {
   color: #fff;
   position: absolute;
   bottom: -55px;
@@ -155,4 +156,33 @@ body.active {
   font-weight: 300;
   letter-spacing: 1px;
   margin: 16px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .column {
+    width: 50%;
+  }
+  .lightbox-image,
+  .lightbox-image-wrapper {
+    height: auto;
+  }
+  .lightbox-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+  .lightbox-enabled {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subtitlu,
+  .lightbox-title {
+    font-size: 1rem;
+  }
 }

@@ -5,7 +5,7 @@ Special thanks for the pictures:
 
 image 1 - Image by James Wheeler from Pixabay - https://pixabay.com/users/jameswheeler-5314099/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2297204
 
-Image 2 - Image by pladicon2012acacias from Pixabay - https://pixabay.com/users/pladicon2012acacias-15473339/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4899802
+Image 2 - Image by Laci Döme from Pixabay  - https://pixabay.com/users/domelaci-2136711/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1244132
 
 Image 3 - Image by David Mark from Pixabay - https://pixabay.com/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1587287
 
